@@ -4,206 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>De At Ease Trip Enterprises Global Services</title>
-
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f7fa;
-        }
-
-        header {
-            background: #0a1f44;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav {
-            background: #122c6a;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        section {
-            padding: 40px;
-        }
-
-        .hero {
-            background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
-
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-
-        footer {
-            background: #0a1f44;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-
-        .btn {
-            background: gold;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            font-weight: bold;
-        }
+        body { margin: 0; font-family: 'Roboto', sans-serif; background-color: #f8f8f8; }
+        a { text-decoration: none; }
+        header { background-color: #0a1f44; color: gold; text-align: center; padding: 30px 20px; font-size: 28px; font-weight: bold; letter-spacing: 1px; }
+        nav { background-color: #122c6a; text-align: center; padding: 12px 0; }
+        nav a { color: gold; margin: 0 15px; font-weight: bold; font-size: 16px; }
+        nav a:hover { color: white; }
+        .hero { background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover; color: gold; text-align: center; padding: 120px 20px; text-shadow: 2px 2px 6px rgba(0,0,0,0.7); }
+        .hero h1 { font-size: 48px; margin-bottom: 20px; }
+        .hero p { font-size: 20px; }
+        section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+        h2 { color: #0a1f44; text-align: center; margin-bottom: 40px; }
+        .cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; }
+        .card { background: white; padding: 25px; border-radius: 12px; width: 280px; box-shadow: 0 6px 12px rgba(0,0,0,0.15); transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        form { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: auto; }
+        input, textarea { padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 16px; }
+        button.btn { background-color: gold; color: #0a1f44; padding: 12px 20px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        button.btn:hover { background-color: #e6c200; color: white; }
+        footer { background-color: #0a1f44; color: gold; text-align: center; padding: 25px 20px; margin-top: 40px; }
+        .whatsapp-btn { position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.3); font-size: 30px; z-index: 999; }
+        @media (max-width: 768px) { .cards { flex-direction: column; align-items: center; } }
     </style>
 </head>
-
 <body>
 
-<header>
-    <h1>De At Ease Trip Enterprises Global Services</h1>
-    <p>Your Trusted Travel Partner</p>
-</header>
+<header>De At Ease Trip Enterprises Global Services</header>
 
 <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Our Services</a>
+    <a href="#contact">Contact Us</a>
 </nav>
 
-<section class="hero" id="home">
-    <h2>Travel Made Easy & Stress-Free</h2>
-    <p>Visa Processing | Flight Booking | Travel Consultancy</p>
-    <button class="btn">Get Started</button>
+<section class="hero">
+    <h1>Welcome to De At Ease Trips</h1>
+    <p>Your trusted travel partner for global services and bookings.</p>
 </section>
 
 <section id="about">
     <h2>About Us</h2>
-    <p>
-        De At Ease Trip Enterprises Global Services is a professional travel agency dedicated 
-        to helping clients achieve their travel goals with ease. We specialize in visa assistance,
-        flight booking, and travel consultancy.
+    <p style="text-align:center; max-width: 800px; margin:auto;">
+        De At Ease Trip Enterprises Global Services is your professional travel consultancy. 
+        We provide visa assistance, flight bookings, hotel reservations, and complete travel solutions worldwide.
     </p>
 </section>
 
 <section id="services">
     <h2>Our Services</h2>
-
-    <div class="services">
-        <div class="card">
-            <h3>Visa Processing</h3>
-            <p>We assist with fast and reliable visa applications.</p>
-        </div>
-
-        <div class="card">
-            <h3>Flight Booking</h3>
-            <p>Book cheap and reliable flights worldwide.</p>
-        </div>
-
-        <div class="card">
-            <h3>Travel Consultancy</h3>
-            <p>Expert advice for international travel success.</p>
-        </div>
+    <div class="cards">
+        <div class="card"><h3>Flight Booking</h3><p>We book domestic and international flights at the best rates.</p></div>
+        <div class="card"><h3>Visa Assistance</h3><p>Complete visa guidance and application support for multiple countries.</p></div>
+        <div class="card"><h3>Hotel Reservation</h3><p>Book premium hotels worldwide with ease and convenience.</p></div>
     </div>
 </section>
 
 <section id="contact">
-    <h2>Contact Us</h2>
-
-    <p>Email: austinikedinobi@hotmail.com</p>
-    <p>Phone: 07030823007</p>
-    <p>WhatsApp: 08124020028</p>
-
-    <form>
-        <input type="text" placeholder="Your Name" required><br><br>
-        <input type="email" placeholder="Your Email" required><br><br>
-        <textarea placeholder="Your Message"></textarea><br><br>
-        <button class="btn">Send Message</button>
+    <h2>Contact Us / Booking Form</h2>
+    <!-- Booking form using Formspree -->
+    <form action="https://formspree.io/f/mrgrkdlp" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message or Booking Details" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
     </form>
 </section>
 
 <footer>
-    <p>© 2026 De At Ease Trip Enterprises Global Services</p>
+    &copy; 2026 De At Ease Trip Enterprises Global Services | All Rights Reserved
 </footer>
 
+<!-- WhatsApp button -->
+<a href="https://wa.me/2348124020028" target="_blank" class="whatsapp-btn">&#128172;</a>
+
 </body>
-</html><!-- WhatsApp Chat Button -->
-<a href="https://wa.me/2348124020028" target="_blank" 
-   style="
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
-      color: white;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-      font-size: 30px;
-   ">
-   &#128172;
-</a><!-- ===== Booking / Contact Form ===== -->
-<section id="contact">
-    <h2>Contact Us / Booking Form</h2>
-    <form 
-      action="https://formspree.io/f/mqegqkve" 
-      method="POST"
-      style="display:flex; flex-direction:column; gap:15px; max-width:500px; margin:auto;"
-    >
-        <input 
-          type="text" 
-          name="name" 
-          placeholder="Your Name" 
-          required
-          style="padding:12px; border-radius:8px; border:1px solid #ccc; font-size:16px;"
-        >
-        <input 
-          type="email" 
-          name="email" 
-          placeholder="Your Email" 
-          required
-          style="padding:12px; border-radius:8px; border:1px solid #ccc; font-size:16px;"
-        >
-        <textarea 
-          name="message" 
-          placeholder="Your Message or Booking Details" 
-          required
-          style="padding:12px; border-radius:8px; border:1px solid #ccc; font-size:16px;"
-        ></textarea>
-        <button 
-          type="submit" 
-          style="
-            background-color: gold; 
-            color: #0a1f44; 
-            padding:12px 20px; 
-            border:none; 
-            border-radius:8px; 
-            font-weight:bold; 
-            cursor:pointer;
-            transition:0.3s;
-          "
-        >
-            Send Message
-        </button>
-    </form>
-</section>
+</html>
